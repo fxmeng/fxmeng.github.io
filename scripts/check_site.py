@@ -13,6 +13,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 MAX_IMAGE_BYTES = 200_000
+VOID_ELEMENTS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
 
 class SiteParser(HTMLParser):
@@ -28,9 +29,13 @@ class SiteParser(HTMLParser):
         self.has_canonical = False
         self.has_viewport = False
         self.inline_styles = 0
+        self.element_stack: list[str] = []
+        self.nesting_errors: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         values = {name: value or "" for name, value in attrs}
+        if tag not in VOID_ELEMENTS:
+            self.element_stack.append(tag)
         element_id = values.get("id")
         if element_id:
             if element_id in self.ids:
@@ -60,6 +65,14 @@ class SiteParser(HTMLParser):
             if values.get("name") == "viewport" and values.get("content"):
                 self.has_viewport = True
 
+    def handle_endtag(self, tag: str) -> None:
+        if not self.element_stack:
+            self.nesting_errors.append(f"Unexpected closing tag </{tag}>.")
+            return
+        expected = self.element_stack.pop()
+        if expected != tag:
+            self.nesting_errors.append(f"Expected </{expected}> before </{tag}>.")
+
 
 def local_path(url: str) -> Path | None:
     parsed = urlparse(url)
@@ -76,6 +89,9 @@ def main() -> int:
     html = INDEX.read_text(encoding="utf-8")
     parser = SiteParser()
     parser.feed(html)
+    if parser.element_stack:
+        errors.append(f"Unclosed HTML elements: {', '.join(parser.element_stack)}.")
+    errors.extend(parser.nesting_errors)
 
     if parser.html_lang != "en":
         errors.append("The root html element must declare lang=\"en\".")
