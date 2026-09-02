@@ -1,242 +1,222 @@
-<!DOCTYPE HTML>
-<!--
-	Spatial by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-	<title>Fanxu Meng(孟繁续)@pku</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<noscript>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/skel.css" />
-		<link rel="stylesheet" href="css/style-xlarge.css" />
-	</noscript>
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-layers.min.js"></script>
-	<script src="js/init.js"></script>
-	<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fanxu Meng (孟繁续) — Foundation Model Research</title>
+  <meta name="description" content="Fanxu Meng is a researcher at Dots Studio, Xiaohongshu Inc., working on foundation model architectures.">
+  <meta name="author" content="Fanxu Meng">
+  <meta name="theme-color" content="#f7f4ed">
+  <link rel="canonical" href="https://fxmeng.github.io/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Fanxu Meng (孟繁续) — Foundation Model Research">
+  <meta property="og:description" content="Research on foundation model architectures at Dots Studio, Xiaohongshu Inc.">
+  <meta property="og:url" content="https://fxmeng.github.io/">
+  <meta property="og:image" content="https://fxmeng.github.io/images/bg.webp">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="683">
+  <meta property="og:image:alt" content="A quiet mountain landscape">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fanxu Meng",
+    "alternateName": "孟繁续",
+    "url": "https://fxmeng.github.io/",
+    "image": "https://fxmeng.github.io/images/photo.webp",
+    "worksFor": {"@type": "Organization", "name": "Dots Studio, Xiaohongshu Inc."},
+    "alumniOf": {"@type": "CollegeOrUniversity", "name": "Peking University"},
+    "knowsAbout": ["Foundation model architectures", "Large language models", "Parameter-efficient fine-tuning", "Efficient inference"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=xvfuhRUAAAAJ",
+      "https://github.com/fxmeng",
+      "https://www.zhihu.com/people/meng-fan-xu-4"
+    ]
+  }
+  </script>
 </head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<body class="landing">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="/" aria-label="Fanxu Meng, home">
+        <span class="wordmark-mark" aria-hidden="true">FM</span><span>Fanxu Meng</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-	<!-- Header -->
-	<header id="header">
-		<ul class="icons">
-			<li>
-				<a href="https://scholar.google.com/citations?user=xvfuhRUAAAAJ" class="icon fa-graduation-cap"></a>
-			</li>
-			<li>
-				<a href="https://github.com/fxmeng" class="icon fa-github"></a>
-			</li>
-			<li>
-				<a href="https://www.zhihu.com/people/meng-fan-xu-4" class="icon fa-twitter"></a>
-			</li>
-			<li>
-				<a href="mailto:fxmeng@stu.pku.edu.cn" class="icon fa-envelope"></a>
-			</li>
-		</ul>
-		<nav id="nav">
-			<ul>
-				<li><a href="/" class="active">Home</a></li>
-				<li><a href="/#two">Publications</a></li>
-				<li><a href="/#footer">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+  <main id="main-content">
+    <section class="hero" id="about" aria-labelledby="about-title">
+      <div class="container hero-grid">
+        <div class="portrait-wrap">
+          <img class="portrait" src="/images/photo.webp" width="240" height="240" alt="Portrait of Fanxu Meng" fetchpriority="high">
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Dots Studio · Xiaohongshu Inc.</p>
+          <h1 id="about-title">Fanxu Meng <span lang="zh-CN">孟繁续</span></h1>
+          <p class="lead">I study foundation model architectures and how to make large models more capable and efficient.</p>
+          <p>
+            I am currently with Dots Studio at Xiaohongshu Inc., where I conduct research on foundation model
+            architectures. I received my Ph.D. from the Institute for Artificial Intelligence, Peking University,
+            advised by <a href="https://muhanzhang.github.io/">Prof. Muhan Zhang</a>. My research also includes
+            parameter-efficient fine-tuning and efficient inference for long-context language models. I have served
+            as a reviewer for NeurIPS, ICML, ICLR, CVPR, TPAMI, etc.
+          </p>
+          <p>
+            Before joining Peking University, I received my master’s degree from Harbin Institute of Technology,
+            Shenzhen, advised by <a href="https://scholar.google.com/citations?user=fhwB7UwAAAAJ">Prof. Guangming Lu</a>.
+            I also spent over two years at Tencent YouTu as an intern and later as a full-time researcher,
+            collaborating with <a href="https://www.sunxing.org/">Xing Sun</a>,
+            <a href="https://haochenglouis.github.io/">Hao Cheng</a>, and <a href="https://keli.info/">Ke Li</a>.
+          </p>
+          <ul class="research-topics" aria-label="Research topics">
+            <li>Foundation model architectures</li><li>Parameter-efficient fine-tuning</li>
+            <li>Long-context inference</li><li>Model compression</li>
+          </ul>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button button-primary" href="https://scholar.google.com/citations?user=xvfuhRUAAAAJ">Google Scholar</a>
+            <a class="button" href="https://github.com/fxmeng">GitHub</a>
+            <a class="button" href="mailto:filtergrafting@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- One -->
-	<section id="one" class="wrapper style1">
-		<div class="container 75%">
-			<div class="row 200%">
-				<div class="4u 12u$(medium)">
-					<header class="major">
-						<p>Fanxu Meng(孟繁续)</p>
-						<p>
-							<div class="image rounded" style="margin-bottom: 1.5em;"><img src="images/photo.jpg" width="200" alt="" /></div>
-						</p>
-					</header>
-				</div>
-				<div class="8u$ 12u$(medium)">
-					<p>
-					  I am a fourth-year Ph.D. student at the Institute for Artificial Intelligence, Peking University, advised by 
-					  <a href="https://muhanzhang.github.io">Prof. Muhan Zhang</a>. 
-					  My research focuses on parameter-efficient fine-tuning of large language models (LLMs) and efficient inference for long-context LLMs. 
-					  I have served as a reviewer for leading conferences and journals, including NeurIPS, ICML, ICLR, CVPR, TPAMI, COLM, AAAI, and IJCAI. 
-					  Prior to joining Peking University, I received my Master’s degree from Harbin Institute of Technology, Shenzhen, where I was advised by 
-					  <a href="https://scholar.google.com/citations?user=fhwB7UwAAAAJ">Prof. Guangming Lu</a>.
-					  I also spent over two years at Tencent YouTu as an intern and later as a full-time researcher, collaborating with 
-					  <a href="https://www.sunxing.org">Xing Sun</a>, 
-					  <a href="https://haochenglouis.github.io">Hao Cheng</a>, 
-					  <a href="https://keli.info">Ke Li</a>, and 
-					  <a href="https://scholar.google.com/citations?user=wY7HV2gAAAAJ">Di Yin</a>.
-					</p>																																																														   
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="publications-section" id="publications" aria-labelledby="publications-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Research</p><h2 id="publications-title">Selected publications</h2></div>
+          <a class="text-link" href="https://scholar.google.com/citations?user=xvfuhRUAAAAJ">View all on Google Scholar <span aria-hidden="true">→</span></a>
+        </div>
 
-	<!-- Two -->
-	<section id="two" class="wrapper style2">
-		<div class="container 75%">
-			<h2 style="text-align: center">Selected Publications</h2>
-			<hr />
-			<div class="row 200%">
-				<div class="3u 4u(large) 12u$(medium)">
-				  <div class="image rounded" style="width:160px; height:160px; border-radius:50%; border:1px solid #ccc; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#fff;">
-				    <img src="images/tpla.jpg" alt="" style="width:100%; height:100%; object-fit:contain; border:none;" /></div>
-				</div>
-				<div class="9u$ 8u$(large) 12u$(medium)">
-					<p><b>[ASPLOS'26 - Summer cycle]</b> TPLA: Tensor Parallel Latent Attention</p>
-					<p> An Attention Mechanism Friendly to Tensor Parallelism and PD Decoupling, (<a href='https://arxiv.org/abs/2508.15881'>Paper</a>)</p>
-					<p>Xiaojuan Tang<sup>*</sup>, <b>Fanxu Meng<sup>*</sup></b>, Pingzhi Tang, Yuxuan Wang, Di Yin, Xing Sun, Muhan Zhang.</p>
-					</div>
-			</div>
-			<hr />
-			<div class="row 200%">
-				<div class="3u 4u(large) 12u$(medium)">
-				  <div class="image rounded" style="width:160px; height:160px; border-radius:50%; border:1px solid #ccc; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#fff;">
-				    <img src="images/transmla.png" alt="" style="width:100%; height:100%; object-fit:contain; border:none;" /></div>
-				</div>
-				<div class="9u$ 8u$(large) 12u$(medium)">
-					<p><b>[NeurIPS 2025 spotlight (Top 3.19%)]</b> TransMLA: Multi-Head Latent Attention Is All You Need</p>
-					<p>Proof MLA better than GQA and convert LLaMA, Qwen to Deepseek, (<a href='https://arxiv.org/abs/2502.07864'>Paper</a>, 
-						<a href="https://github.com/fxmeng/TransMLA">Code</a>, 
-						<a href="https://x.com/_akhaliq/status/1889870173055885452">Twitter</a>)</p>
-					<p><b>Fanxu Meng<sup>*</sup></b>, Pingzhi Tang<sup>*</sup>, Xiaojuan Tang, Zengwei Yao, Xing Sun, Muhan Zhang.</p>
-					</div>
-			</div>
-			<hr />
-			<div class="row 200%">
-				<div class="3u 4u(large) 12u$(medium)">
-				  <div class="image rounded" style="width:160px; height:160px; border-radius:50%; border:1px solid #ccc; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#fff;">
-				    <img src="images/hd_pissa.png" alt="" style="width:100%; height:100%; object-fit:contain; border:none;" /></div>
-				</div>
-				<div class="9u$ 8u$(large) 12u$(medium)">
-					<p><b>[EMNLP 2025 Oral]</b> HD-PiSSA: High-Rank Distributed Orthogonal Adaptation</p>
-					<p>High-rank updates under data parallel fine-tuning, (<a href='https://arxiv.org/abs/2505.18777'>Paper</a>, <a href="https://github.com/MuLabPKU/HD-PiSSA">Code</a>)</p>
-					<p>Yiding Wang<sup>*</sup>, <b>Fanxu Meng<sup>*</sup></b>, Xuefeng Zhang, Fan Jiang, Pingzhi Tang, Muhan Zhang.</p>
-					</div>
-			</div>
-			<hr />
-			<div class="row 200%">
-				<div class="3u 4u(large) 12u$(medium)">
-				  <div class="image rounded" style="width:160px; height:160px; border-radius:50%; border:1px solid #ccc; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#fff;">
-				    <img src="images/clover.png" alt="" style="width:100%; height:100%; object-fit:contain; border:none;" /></div>
-				</div>
-				<div class="9u$ 8u$(large) 12u$(medium)">
-					<p><b>[ICML 2025]</b> CLOVER: Cross-Layer Orthogonal Vectors Pruning and Fine-Tuning</p>
-					<p>Absorb-Decompose for Pruning and Fine-Tuning, (<a href='https://arxiv.org/abs/2411.17426'>Paper</a>, <a href="https://github.com/fxmeng/CLOVER">Code</a>)</p>
-					<p><b>Fanxu Meng</b>, Pingzhi Tang, Fan Jiang, Muhan Zhang.</p>
-					</div>
-			</div>
-			<hr />
-			<div class="row 200%">	
-				<div class="3u 4u(large) 12u$(medium)">
-				  <div class="image rounded" style="width:160px; height:160px; border-radius:50%; border:1px solid #ccc; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#fff;">
-				    <img src="images/pissa.png" alt="" style="width:100%; height:100%; object-fit:contain; border:none;" /></div>
-				</div>
-				<div class="9u$ 8u$(large) 12u$(medium)">
-					<p><b>[NeurIPS 2024 spotlight (Top 2.08%)]</b> PiSSA: Principal Singular values and Singular vectors Adaptation</p>
-					<p>A faster and better LoRA initialization method, (<a href='https://arxiv.org/abs/2404.02948'>Paper</a>, <a href="https://github.com/GraphPKU/PiSSA">Code</a>, 
-						<a href="https://github.com/huggingface/peft/tree/main/examples/pissa_finetuning">1</a>, 
-						<a href="https://llamafactory.readthedocs.io/zh-cn/latest/advanced/adapters.html#pissa">2</a>, 
-						<a href="https://wiki.rwkv.com/RWKV-Fine-Tuning/Pissa-Fine-Tuning.html#pissa-fine-tuning-tutorial">3</a>, 
-						<a href="https://paddlenlp.readthedocs.io/en/latest/llm/docs/algorithm_overview.html#pissa">4</a>, 
-						<a href="https://x.com/arankomatsuzaki/status/1777453185675973104">Twitter</a>,
-						<a href="https://www.bilibili.com/video/BV1wi421e78B/?share_source=copy_web&vd_source=de7fbd68b3f46f40833c3f5defed104a">Talk</a>)</p>
-					<p><b>Fanxu Meng</b>, Zhaohui Wang, Muhan Zhang.</p>
-					</div>
-			</div>
-			<hr />
-			<div class="row 200%">
-				<div class="3u 4u(large) 12u$(medium)">
-				  <div class="image rounded" style="width:160px; height:160px; border-radius:50%; border:1px solid #ccc; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#fff;">
-				    <img src="images/rmnet.png" alt="" style="width:100%; height:100%; object-fit:contain; border:none;" /></div>
-				</div>
-				<div class="9u$ 8u$(large) 12u$(medium)">
-					<p>[Arxiv Preprint] RM -R ./Removing Residual Connection Equivalently</p>
-					<p>A plug-in tricks for efficient pruning, (<a href='https://arxiv.org/abs/2111.00687'>Paper</a>, <a href="https://github.com/fxmeng/RMNet">Code</a>, <a href="https://course.zhidx.com/c/ZWQ0OTgyNGY2MzVmNGZlNjBhMTM=">Talk</a>)</p>
-					<p><b>Fanxu Meng<sup>*</sup></b>, Hao Cheng<sup>*</sup>, Jiaxin Zhuang, Ke Li, Xing Sun.</p>
-					</div>
-			</div>
-			<hr />
-			<div class="row 200%">
-				<div class="3u 4u(large) 12u$(medium)">
-				  <div class="image rounded" style="width:160px; height:160px; border-radius:50%; border:1px solid #ccc; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#fff;">
-				    <img src="images/swp.png" alt="" style="width:100%; height:100%; object-fit:contain; border:none;" /></div>
-				</div>
-				<div class="9u$ 8u$(large) 12u$(medium)">
-					<p><b>[NeurIPS 2020]</b> Pruning Filter in Filter</p>
-					<p>Stripe wise pruning, (<a href='https://arxiv.org/abs/2009.14410'>Paper</a>, <a href="https://github.com/fxmeng/Pruning-Filter-in-Filter">Code</a>, <a href="https://course.zhidx.com/c/NWM2OTYxYTgxN2Q2NzVmNjQ1NjM=">Talk</a>)</p>
-					<p><b>Fanxu Meng<sup>*</sup></b>, Hao Cheng<sup>*</sup>, Ke Li, Huixiang Luo, Xiaowei Guo, Guangming Lu, Xing Sun.</p>
-				</div>
-			</div>
-			<hr />
-			<div class="row 200%">
-				<div class="3u 4u(large) 12u$(medium)">
-				  <div class="image rounded" style="width:160px; height:160px; border-radius:50%; border:1px solid #ccc; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#fff;">
-				    <img src="images/grafting.png" alt="" style="width:100%; height:100%; object-fit:contain; border:none;" /></div>
-				</div>
-				<div class="9u$ 8u$(large) 12u$(medium)">
-					<p><b>[CVPR 2020]</b> Filter Grafting for Deep Neural Networks</p>
-					<p>Reactivate invalid filter while training,(<a href='https://openaccess.thecvf.com/content_CVPR_2020/html/Meng_Filter_Grafting_for_Deep_Neural_Networks_CVPR_2020_paper.html'>Paper</a>, <a href="https://github.com/fxmeng/filter-grafting">Code</a>)</p>
-					<p><b>Fanxu Meng<sup>*</sup></b>, Hao Cheng<sup>*</sup>, Ke Li, Zhixin Xu, Rongrong Ji, Xing Sun, Guangming Lu.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--
-	<section id="three" class="wrapper style3 special">
-		<div class="container 50%">
+        <div class="publication-list">
+          <article class="publication">
+            <div class="publication-media"><img src="/images/hisa.webp" width="882" height="523" alt="HISA hierarchical block-to-token indexing workflow" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">COLM 2026</p>
+              <h3>HISA: Efficient Hierarchical Indexing for Fine-Grained Sparse Attention</h3>
+              <p class="summary">A training-free, coarse-to-fine indexer that accelerates token-level sparse attention while preserving fine-grained selection.</p>
+              <p class="authors">Yufei Xu<sup>*</sup>, <strong>Fanxu Meng<sup>*</sup></strong>, Fan Jiang, Yuxuan Wang, Ruijie Zhou, Zhaohui Wang, Jiexi Wu, Zhixin Pan, Xiaojuan Tang, Wenjie Pei, Tongxuan Liu, Di Yin, Xing Sun, Muhan Zhang</p>
+              <ul class="publication-links" aria-label="HISA resources"><li><a href="https://openreview.net/pdf?id=GnWqiwzNzK">Paper</a></li><li><a href="https://github.com/MuLabPKU/TransArch/tree/main/HISA_COLM_2026">Code</a></li></ul>
+            </div>
+          </article>
 
-			<h2>Curriculum vitae</h2>
-			<ul class="actions">
-				<li><a href="CV_fanxumeng.pdf" class="button alt big">Download CV</a></li>
-			</ul>
-		</div>
-	</section>
-	 -->
+          <article class="publication">
+            <div class="publication-media"><img src="/images/tpla.webp" width="480" height="350" alt="Diagram illustrating Tensor Parallel Latent Attention" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">ASPLOS 2026 · Summer cycle</p>
+              <h3>TPLA: Tensor Parallel Latent Attention</h3>
+              <p class="summary">An attention mechanism designed for tensor parallelism and prefill–decode disaggregation.</p>
+              <p class="authors">Xiaojuan Tang<sup>*</sup>, <strong>Fanxu Meng<sup>*</sup></strong>, Pingzhi Tang, Yuxuan Wang, Di Yin, Xing Sun, Muhan Zhang</p>
+              <ul class="publication-links" aria-label="TPLA resources"><li><a href="https://arxiv.org/abs/2508.15881">Paper</a></li></ul>
+            </div>
+          </article>
 
-	<section id="three" class="wrapper style3 special">
-		<div class="container 50%">
-			<h2>Get in touch</h2>
-			<ul class="icons">
-				<li>
-					<a href="https://scholar.google.com/citations?user=xvfuhRUAAAAJ" class="icon fa-graduation-cap"></a>
-				</li>
-				<li>
-					<a href="https://github.com/fxmeng" class="icon fa-github"></a>
-				</li>
-				<li>
-					<a href="https://www.zhihu.com/people/meng-fan-xu-4" class="icon fa-twitter"></a>
-				</li>
-				<li>
-				<a href="mailto:fxmeng@stu.pku.edu.cn" class="icon fa-envelope"></a>
-				</li>
-			</ul>
-		</div>
-	</section>
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="container">
-			<ul class="copyright">
-				<li>&copy; 2022 Fanxu Meng</li>
-			</ul>
-		</div>
-	</footer>
+          <article class="publication">
+            <div class="publication-media"><img src="/images/transmla.webp" width="480" height="388" alt="TransMLA architecture illustration" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">NeurIPS 2025 · Spotlight · Top 3.19%</p>
+              <h3>TransMLA: Multi-Head Latent Attention Is All You Need</h3>
+              <p class="summary">A theoretical and practical study of MLA, including conversions of Llama and Qwen models to the DeepSeek-style architecture.</p>
+              <p class="authors"><strong>Fanxu Meng<sup>*</sup></strong>, Pingzhi Tang<sup>*</sup>, Xiaojuan Tang, Zengwei Yao, Xing Sun, Muhan Zhang</p>
+              <ul class="publication-links" aria-label="TransMLA resources">
+                <li><a href="https://arxiv.org/abs/2502.07864">Paper</a></li><li><a href="https://github.com/fxmeng/TransMLA">Code</a></li>
+                <li><a href="https://x.com/_akhaliq/status/1889870173055885452">Discussion</a></li>
+              </ul>
+            </div>
+          </article>
 
+          <article class="publication">
+            <div class="publication-media"><img src="/images/hd_pissa.webp" width="480" height="464" alt="HD-PiSSA method illustration" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">EMNLP 2025 · Oral · Top 3.98%</p>
+              <h3>HD-PiSSA: High-Rank Distributed Orthogonal Adaptation</h3>
+              <p class="summary">High-rank parameter updates for data-parallel fine-tuning.</p>
+              <p class="authors">Yiding Wang<sup>*</sup>, <strong>Fanxu Meng<sup>*</sup></strong>, Xuefeng Zhang, Fan Jiang, Pingzhi Tang, Muhan Zhang</p>
+              <ul class="publication-links" aria-label="HD-PiSSA resources"><li><a href="https://arxiv.org/abs/2505.18777">Paper</a></li><li><a href="https://github.com/MuLabPKU/HD-PiSSA">Code</a></li></ul>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-media"><img src="/images/clover.webp" width="480" height="600" alt="CLOVER method illustration" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">ICML 2025</p>
+              <h3>CLOVER: Cross-Layer Orthogonal Vectors Pruning and Fine-Tuning</h3>
+              <p class="summary">An absorb–decompose approach to model pruning and fine-tuning.</p>
+              <p class="authors"><strong>Fanxu Meng</strong>, Pingzhi Tang, Fan Jiang, Muhan Zhang</p>
+              <ul class="publication-links" aria-label="CLOVER resources"><li><a href="https://arxiv.org/abs/2411.17426">Paper</a></li><li><a href="https://github.com/fxmeng/CLOVER">Code</a></li></ul>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-media"><img src="/images/pissa.webp" width="480" height="480" alt="PiSSA method illustration" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">NeurIPS 2024 · Spotlight · Top 2.08%</p>
+              <h3>PiSSA: Principal Singular Values and Singular Vectors Adaptation</h3>
+              <p class="summary">A faster and more effective initialization method for low-rank adaptation.</p>
+              <p class="authors"><strong>Fanxu Meng</strong>, Zhaohui Wang, Muhan Zhang</p>
+              <ul class="publication-links" aria-label="PiSSA resources">
+                <li><a href="https://arxiv.org/abs/2404.02948">Paper</a></li><li><a href="https://github.com/GraphPKU/PiSSA">Code</a></li>
+                <li><a href="https://github.com/huggingface/peft/tree/main/examples/pissa_finetuning">PEFT example</a></li>
+                <li><a href="https://llamafactory.readthedocs.io/zh-cn/latest/advanced/adapters.html#pissa">LLaMA-Factory guide</a></li>
+                <li><a href="https://wiki.rwkv.com/RWKV-Fine-Tuning/Pissa-Fine-Tuning.html#pissa-fine-tuning-tutorial">RWKV guide</a></li>
+                <li><a href="https://paddlenlp.readthedocs.io/en/latest/llm/docs/algorithm_overview.html#pissa">PaddleNLP guide</a></li>
+                <li><a href="https://www.bilibili.com/video/BV1wi421e78B/">Talk</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-media"><img src="/images/swp.webp" width="480" height="270" alt="Stripe-wise pruning illustration" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">NeurIPS 2020</p>
+              <h3>Pruning Filter in Filter</h3>
+              <p class="summary">A stripe-wise structured pruning method for convolutional neural networks.</p>
+              <p class="authors"><strong>Fanxu Meng<sup>*</sup></strong>, Hao Cheng<sup>*</sup>, Ke Li, Huixiang Luo, Xiaowei Guo, Guangming Lu, Xing Sun</p>
+              <ul class="publication-links" aria-label="Pruning Filter in Filter resources"><li><a href="https://arxiv.org/abs/2009.14410">Paper</a></li><li><a href="https://github.com/fxmeng/Pruning-Filter-in-Filter">Code</a></li><li><a href="https://course.zhidx.com/c/NWM2OTYxYTgxN2Q2NzVmNjQ1NjM=">Talk</a></li></ul>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-media"><img src="/images/grafting.webp" width="480" height="270" alt="Filter grafting training illustration" loading="lazy" decoding="async"></div>
+            <div class="publication-body">
+              <p class="venue">CVPR 2020</p>
+              <h3>Filter Grafting for Deep Neural Networks</h3>
+              <p class="summary">A training strategy that reactivates invalid filters to improve representation capacity.</p>
+              <p class="authors"><strong>Fanxu Meng<sup>*</sup></strong>, Hao Cheng<sup>*</sup>, Ke Li, Zhixin Xu, Rongrong Ji, Xing Sun, Guangming Lu</p>
+              <ul class="publication-links" aria-label="Filter Grafting resources"><li><a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Meng_Filter_Grafting_for_Deep_Neural_Networks_CVPR_2020_paper.html">Paper</a></li><li><a href="https://github.com/fxmeng/filter-grafting">Code</a></li></ul>
+            </div>
+          </article>
+        </div>
+        <p class="publication-note"><sup>*</sup> Equal contribution.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-card">
+        <div><p class="eyebrow">Contact</p><h2 id="contact-title">Let’s talk research.</h2><p>I welcome conversations about foundation model architectures, model adaptation, and efficient inference.</p></div>
+        <div class="contact-links">
+          <a class="button button-light" href="mailto:filtergrafting@gmail.com">filtergrafting@gmail.com</a>
+          <a href="https://www.zhihu.com/people/meng-fan-xu-4">Zhihu</a><a href="https://github.com/fxmeng">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 Fanxu Meng</p><a href="#main-content">Back to top <span aria-hidden="true">↑</span></a></div></footer>
 </body>
-
 </html>
